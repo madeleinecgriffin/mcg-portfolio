@@ -1,26 +1,29 @@
+// App.tsx
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Container from './components/Container/Container';
+import Header from './components/Header';
+import ProfileCard from './components/ProfileCard/ProfileCard';
+import Projects from './components/Projects';
+import Footer from './components/Footer';
 
-function App() {
+const App: React.FC = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Header />
+      <main>
+        <ProfileCard
+          imageUrl=""
+          name="Madeleine Griffin"
+          title="I'm a Software Engineer based in Chicago."
+          githubUrl="https://github.com/madeleinecgriffin"
+          linkedinUrl="https://www.linkedin.com/in/madeleinegriffin"
+          />
+        <Projects />
+      </main>
+      <Footer />
+    </Container>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,68 @@
+/* ProfileCard.css */
+.profile-card {
+    display: flex;
+    align-items: center;
+}
+
+.profile-image {
+    margin-right: 20px;
+}
+
+.profile-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile-info {
+    color: #fff; /* Set text color to white */
+}
+
+.profile-info h2 {
+    margin: 0;
+}
+
+.profile-info p {
+    margin: 5px 0;
+}
+
+.profile-info h2 {
+    margin: 0;
+}
+
+.profile-info p {
+    margin: 5px 0;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-button .button-text {
+    margin-left: 5px; /* Add margin between icon and text */
+}
+
+.social-button {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.social-button.github {
+    background-color: #24292e;
+    color: #fff;
+}
+
+.social-button.linkedin {
+    background-color: #0e76a8;
+    color: #fff;
+}
+
+.social-button:hover {
+    background-color: #ddd;
+}
