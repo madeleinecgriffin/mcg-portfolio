@@ -1,28 +1,32 @@
 // App.tsx
 import React from 'react';
 import Container from './components/Container/Container';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 import ProfileCard from './components/ProfileCard/ProfileCard';
 import Projects from './components/Projects';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 
 const App: React.FC = () => {
 
   return (
-    <Container>
-      <Header />
-      <main>
-        <ProfileCard
-          imageUrl=""
-          name="Madeleine Griffin"
-          title="I'm a Software Engineer based in Chicago."
+    <>
+      
+        <Header 
           githubUrl="https://github.com/madeleinecgriffin"
           linkedinUrl="https://www.linkedin.com/in/madeleinegriffin"
-          />
-        <Projects />
-      </main>
-      <Footer />
-    </Container>
+        />
+        <Container>
+        <main>
+          <ProfileCard />
+          <Projects />
+        </main>
+        </Container>
+        <Footer 
+          githubUrl="https://github.com/madeleinecgriffin"
+          linkedinUrl="https://www.linkedin.com/in/madeleinegriffin"
+        />
+      
+    </>
   );
 };
 
