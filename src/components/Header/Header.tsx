@@ -2,6 +2,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import './Header.css';
 
 interface HeaderProps {
@@ -17,11 +18,16 @@ const Header: React.FC<HeaderProps> = ({ githubUrl, linkedinUrl }) => {
           <div className="col-md-12">
           <nav>
             <ul className="nav-links">
-              <h1><a href="/">Madeleine Griffin</a></h1>
-              <ul className="right-links">
-                <li><a href={linkedinUrl} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</a></li>
-                <li><a href={githubUrl} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /> Github</a></li>
-              </ul>
+              {/* <div className="row"> */}
+                <h1><a href="/">Madeleine Griffin</a></h1>
+              {/* </div>
+              <div className="row"> */}
+                <ul className="right-links">
+                  <li><a href={linkedinUrl} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</a></li>
+                  <li><a href={githubUrl} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /> Github</a></li>
+                  <li><a href="mailto:madeleinecgriffin@gmail.com"><FontAwesomeIcon icon={faEnvelope} /> Contact</a></li>
+                </ul>
+               {/* </div> */}
             </ul>
             </nav>
           </div>
