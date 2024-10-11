@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mcg-portfolio/static/css/main.f3696486.css",
+    "main.js": "/mcg-portfolio/static/js/main.5664b2fc.js",
+    "index.html": "/mcg-portfolio/index.html",
+    "main.f3696486.css.map": "/mcg-portfolio/static/css/main.f3696486.css.map",
+    "main.5664b2fc.js.map": "/mcg-portfolio/static/js/main.5664b2fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3696486.css",
+    "static/js/main.5664b2fc.js"
+  ]
+}
