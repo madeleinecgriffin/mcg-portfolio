@@ -2,7 +2,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+// import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import './Header.css';
 
 interface HeaderProps {
@@ -25,7 +25,7 @@ const Header: React.FC<HeaderProps> = ({ githubUrl, linkedinUrl }) => {
                 <ul className="right-links">
                   <li><a href={linkedinUrl} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</a></li>
                   <li><a href={githubUrl} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /> Github</a></li>
-                  <li><a href="mailto:madeleinecgriffin@gmail.com"><FontAwesomeIcon icon={faEnvelope} /> Contact</a></li>
+                  {/* <li><a href="mailto:madeleinecgriffin@gmail.com"><FontAwesomeIcon icon={faEnvelope} /> Contact</a></li> */}
                 </ul>
                {/* </div> */}
             </ul>
