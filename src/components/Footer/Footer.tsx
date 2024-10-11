@@ -9,7 +9,7 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ githubUrl, linkedinUrl }) => {
   return (
-    <footer className="footer">
+    <footer className="footer component">
       <div className="container">
         <div className="row">
           <div className="col-md-12 footer-left">
