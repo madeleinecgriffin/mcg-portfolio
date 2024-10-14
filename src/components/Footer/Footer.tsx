@@ -2,12 +2,7 @@
 import React from 'react';
 import './Footer.css';
 
-interface FooterProps {
-  githubUrl: string;
-  linkedinUrl: string;
-}
-
-const Footer: React.FC<FooterProps> = ({ githubUrl, linkedinUrl }) => {
+const Footer: React.FC = () => {
   return (
     <footer className="footer component">
       <div className="container">
